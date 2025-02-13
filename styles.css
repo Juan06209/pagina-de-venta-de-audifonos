@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilo del Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#header-img {
+    width: 120px;
+}
+
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+#nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+/* Estilos del Formulario */
+.registro {
+    padding: 100px 20px 50px;
+}
+
+#email {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: #ff9900;
+}
+
+/* Sección de Características */
+#caracteristicas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.feature {
+    width: 30%;
+    padding: 20px;
+}
+
+.feature img {
+    width: 50px;
+}
+
+.feature h2 {
+    margin: 15px 0;
+}
+
+/* Video */
+.video {
+    padding: 50px 20px;
+}
+
+#video {
+    width: 60%;
+    height: 315px;
+}
+
+/* Sección de Precios */
+#precios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.plan {
+    background-color: #1f1f1f;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.plan h3 {
+    color: #ffcc00;
+}
+
+.plan p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.plan ul {
+    list-style: none;
+}
+
+.plan li {
+    margin: 5px 0;
+}
+
+.plan button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.plan button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #nav-bar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #caracteristicas {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    #video {
+        width: 100%;
+    }
+
+    #precios {
+        flex-direction: column;
+        align-items: center;
+    }
+}
